@@ -33,7 +33,6 @@
         _livingView.layer.rasterizationScale = [UIScreen mainScreen].scale;
         [self.contentView addSubview:_livingView];
         
-        
         UILabel * livingLabel = [[UILabel alloc]initWithFrame:CGRectMake(_livingView.width-40, 0, 40, 15)];
         //        livingLabel.backgroundColor = [UIColor blueColor];
         livingLabel.text = @"直播中";
@@ -41,7 +40,6 @@
         livingLabel.textColor = [UIColor whiteColor];
         livingLabel.textAlignment = NSTextAlignmentCenter;
         [_livingView addSubview:livingLabel];
-        
         
         self.roadLeftImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, (15-12)/2, 12, 12)];
         self.roadLeftImageView.right =livingLabel.left-3;
